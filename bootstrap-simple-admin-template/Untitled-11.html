@@ -1,0 +1,118 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="table-container">
+          <div class="card" >
+            <div class="card-header" ><th class="policy-name1"></th></div>
+            <div class="card-header" >
+                <nav class="navbar navbar-expand-lg navbar-white bg-white" style="background-color:  #f1f1f1;"  role="navigation">
+                    <div class="navbar-header" style="background-color:  #f1f1f1;"> 
+                    <div id="main-nav" class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active" id="firstLink"><a href="/bootstrap-simple-admin-template/polcy1.html" class="scroll-link">Policy</a></li>
+                        <li><a href="#services" class="scroll-link">Clauses & Controls</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">Requirements</a></li>
+                        <li><a href="#work" class="scroll-link">Audit Logs</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+                  <div class="card-body">
+                    <div class="table-container">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Assigned To</th>
+                              <th>Entity</th>
+                              <th>Recurrence</th>
+                              <th>Department</th>
+                              <th>Organization Wide</th>
+                              <th>Approver</th>
+                              <th>Review Date</th>
+                            </tr>
+                          </thead>
+            
+                          <tbody>
+                            <tr>
+                              
+                                <tr class="table-header-button">
+                                    <th class="policy-assignee"></th>
+                                    <th class="policy-entities"></th>
+                                    <th class="policy-entiti"></th>
+                                    <th class="policy-ent"></th>
+                                    <th class="policy-recurrence"></th>
+                                    <th class="policy-department"></th>
+                                    <th class="policy-e"></th>
+                                  </tr>
+                                </thead>
+                                <tbody id="policy-table">
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    // Get the policy data from local storage.
+const policyName = localStorage.getItem('policy_name');
+const policyRequirement = localStorage.getItem('policy_requirement');
+const policyAssignee = localStorage.getItem('policy_assignee');
+const policyRecurrence = localStorage.getItem('policy_recurrence');
+const policyDepartment = localStorage.getItem('policy_department');
+const policyEntities = localStorage.getItem('policy_entities');
+
+// Create a new row for the table.
+const newRow = document.createElement('tr');
+
+// Create a new cell for each column in the table.
+const policyAssigneeCell = document.createElement('td');
+policyAssigneeCell.textContent = policyAssignee;
+
+const policyEntitiesCell = document.createElement('td');
+policyEntitiesCell.textContent = policyEntities;
+
+const policyRecurrenceCell = document.createElement('td');
+policyRecurrenceCell.textContent = policyRecurrence;
+
+const policyDepartmentCell = document.createElement('td');
+policyDepartmentCell.textContent = policyDepartment;
+
+// Create a blank cell for the Organization Width column.
+const organizationWidthCell = document.createElement('td');
+organizationWidthCell.textContent = '';
+
+// Create a blank cell for the Approver column.
+const approverCell = document.createElement('td');
+approverCell.textContent = '';
+
+// Append the new cells to the new row.
+newRow.appendChild(policyAssigneeCell);
+newRow.appendChild(policyEntitiesCell);
+newRow.appendChild(policyRecurrenceCell);
+newRow.appendChild(policyDepartmentCell);
+newRow.appendChild(organizationWidthCell);
+newRow.appendChild(approverCell);
+
+// Append the new row to the table.
+document.querySelector('#policy-table').appendChild(newRow);
+const cardHeader = document.querySelector('.card-header');
+
+// Set the card header text to the policy name.
+cardHeader.textContent = policyName;
+
+</script>
+<script>
+    
+</script
+
+                                        
+   

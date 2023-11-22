@@ -1,0 +1,139 @@
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../font/Lato-Regular.eot");
+  src: url("../font/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Regular.woff") format("woff"), url("../font/Lato-Regular.ttf") format("truetype");
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .no-upcomming-audits {
+    margin-bottom: ;
+    height: 400px;
+    background-color: white;
+    max-width: 960px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .viewall {
+    float: right;
+  }
+  .month-picker {
+    margin-bottom: 2rem;
+  }
+  
+  .month-picker input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .audit-calendar {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .audit-calendar h2 {
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #666;
+  }
+  
+  a:hover {
+    color: #f00;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h2{
+    float: left;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  .date-picker {
+    margin-bottom: 2rem;
+  }
+  
+  .date-picker input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .audit-calendar {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .audit-calendar h2 {
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #666;
+  }
+  
+  a:hover {
+    color: #f00;
+  }
+  .audit-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .audit-calendar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .viewall {
+    float: right;
+  }

@@ -1,0 +1,22 @@
+
+.input1{
+    width: 12.5%;
+   
+  }
+  .filters-container{
+    background-color:white;
+  }
+  .table{
+    background-color:white;
+  }
+  #input1{
+    width: 29%;
+    text-align: center;
+    height: auto;
+  }
+  .search{
+    height:0px;
+  }
+  .table-container{
+    height: 400px;
+  }

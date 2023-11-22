@@ -1,0 +1,315 @@
+<!doctype html>
+<!-- 
+* Bootstrap Simple Admin Template
+* Version: 2.1
+* Author: Alexis Luna
+* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>policy uplode | Bootstrap Simple Admin Template</title>
+    <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+    <link href="/bootstrap-simple-admin-template/css/uplode.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="wrapper" style="background-color: #fff;">
+        <!-- sidebar navigation component -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <img src="assets/img/logo1.png" alt="bootraper logo" class="app-logo">
+            </div>
+            <ul class="list-unstyled components text-secondary">
+                <li>
+                    <a href="dashboard.html"><i class="fas fa-home"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="forms.html"><i class="fas fa-file-alt"></i>create new policy</a>
+                </li>
+                <li>
+                    <a href="tables.html"><i class="fas fa-table"></i>policy</a>
+                </li>
+                <li>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i>Charts</a>
+                </li>
+                <li>
+                    <a href="icons.html"><i class="fas fa-icons"></i>Icons</a>
+                </li>
+                <li>
+                    <a href="#uielementsmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-layer-group"></i>UI Elements</a>
+                    <ul class="collapse list-unstyled" id="uielementsmenu">
+                        <li>
+                            <a href="ui-buttons.html"><i class="fas fa-angle-right"></i>Buttons</a>
+                        </li>
+                        <li>
+                            <a href="ui-badges.html"><i class="fas fa-angle-right"></i>Badges</a>
+                        </li>
+                        <li>
+                            <a href="ui-cards.html"><i class="fas fa-angle-right"></i>Cards</a>
+                        </li>
+                        <li>
+                            <a href="ui-alerts.html"><i class="fas fa-angle-right"></i>Alerts</a>
+                        </li>
+                        <li>
+                            <a href="ui-tabs.html"><i class="fas fa-angle-right"></i>Tabs</a>
+                        </li>
+                        <li>
+                            <a href="ui-date-time-picker.html"><i class="fas fa-angle-right"></i>Date & Time Picker</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#authmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-user-shield"></i>Authentication</a>
+                    <ul class="collapse list-unstyled" id="authmenu">
+                        <li>
+                            <a href="login.html"><i class="fas fa-lock"></i>Login</a>
+                        </li>
+                        <li>
+                            <a href="signup.html"><i class="fas fa-user-plus"></i>Signup</a>
+                        </li>
+                        <li>
+                            <a href="forgot-password.html"><i class="fas fa-user-lock"></i>Forgot password</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pagesmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-copy"></i>Pages</a>
+                    <ul class="collapse list-unstyled" id="pagesmenu">
+                        <li>
+                            <a href="blank.html"><i class="fas fa-file"></i>Blank page</a>
+                        </li>
+                        <li>
+                            <a href="404.html"><i class="fas fa-info-circle"></i>404 Error page</a>
+                        </li>
+                        <li>
+                            <a href="500.html"><i class="fas fa-info-circle"></i>500 Error page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="users.html"><i class="fas fa-user-friends"></i>Users</a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- end of sidebar component -->
+        <div id="body" class="active">
+            <!-- navbar navigation component -->
+            <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                    <i class="fas fa-bars"></i><span></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" id="nav1" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-link"></i> <span>Quick Links</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end nav-link-menu" aria-labelledby="nav1">
+                                    <ul class="nav-list">
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-list"></i> Access Logs</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-database"></i> Back ups</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i> Updates</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-user-shield"></i> Roles</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" id="nav2" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i> <span>John Doe</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end of navbar navigation -->
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="table-container">
+                      <div class="card" >
+                        <div class="card-header" ><th class="policy-name1"></th></div>
+                        <div class="card-header" >
+                            <nav class="navbar navbar-expand-lg navbar-white " style="background-color:  #f1f1f1;"  role="navigation">
+                                <div class="navbar-header1" style="background-color:  #f1f1f1;"> 
+                                <div id="main-nav" class="collapse navbar-collapse">
+                                  <ul class="nav1 navbar-nav" id="mainNav">
+                                    <li class="active" id="firstLink"><a href="/bootstrap-simple-admin-template/uplode.html" class="scroll-link">Policy</a></li>
+                                    <li><a href="#services" class="scroll-link">Clauses & Controls</a></li>
+                                    <li><a href="#aboutUs" class="scroll-link">Requirements</a></li>
+                                    <li><a href="#work" class="scroll-link">Audit Logs</a></li>
+                                  </ul>
+                                </div>
+                              </nav>
+                        </div>
+                              <div class="card-body">
+                                <h4 class="card-body">Policy Requirements</h4>
+                                <div class="table-container">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th>Assigned To</th>
+                                          <th>Entity</th>
+                                          <th>Recurrence</th>
+                                          <th>Department</th>
+                                          <th>Organization Wide</th>
+                                          <th>Approver</th>
+                                          <th>Review Date</th>
+                                        </tr>
+                                      </thead>
+                        
+                                      <tbody>
+                                        <tr>
+                                          
+                                            <tr class="table-header-button">
+                                                <th class="policy-assignee"></th>
+                                                <th class="policy-entities"></th>
+                                                <th class="policy-entiti"></th>
+                                                <th class="policy-ent"></th>
+                                                <th class="policy-recurrence"></th>
+                                                <th class="policy-department"></th>
+                                                <th class="policy-e"></th>
+                                              </tr>
+                                            </thead>
+                                            <tbody id="policy-table">
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    
+                                  </div>
+                                  
+                                  <div class="container">
+                                    <div class="attachments">
+                                      <h4 class="card-body">Attachmentes</h4>
+                                      <form action="/upload.php" method="post" enctype="multipart/form-data">
+                                        <input type="file" name="file">
+                                        <button class="delete-button"style="margin: left 10px;">Delete</button>
+                                        <input  class="delete-button" type="submit" value="Upload">
+                                      </form>
+                                    </div>
+                                  </div><br>
+                                  <div class="sc-pKqro jfoYSH">
+                                    <div class="MuiStack-root css-i8qcsb">
+                                      <div class="sc-kpDqfm cYDqOU">
+                                        <h4 class="card-body">Comments</h4>
+                                     
+                                      <div class="jss2 jss2--singleLine" style="position: relative; overflow-y: visible; border: none;">
+                                        <div class="jss2__control">
+                                          <div class="jss2__highlighter jss2__highlighter--singleLine" ></div>
+                                          <input type="text" placeholder="Start typing your comment here..." class="jss2__input" value="" style="display: block; width: 90%; position: absolute; margin: 0px; top: 0px; left: 0px; box-sizing: border-box; background-color: transparent; font-family: inherit; font-size: 0.85vw; letter-spacing: inherit; height: 44px; border-top: none; border-right: none; border-bottom: 1px solid rgb(204, 204, 204); border-left: none; border-image: initial;">
+                                        </div>
+                                        
+                                      </div>
+                                      <div class="sc-kpDqfm bgNNJZ" style="font-size: 0.95vw; letter-spacing: -0.01em; margin-top: 4vw;">No comments yet.</div>
+                                      <div class="sc-kpDqfm AGVAA"></div>
+                                    </div>
+                                </div>
+                                  </div>
+                                  
+                                  
+                                </div>
+                              </div>
+                              
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+                // Get the policy data from local storage.
+            const policyName = localStorage.getItem('policy_name');
+            const policyRequirement = localStorage.getItem('policy_requirement');
+            const policyAssignee = localStorage.getItem('policy_assignee');
+            const policyRecurrence = localStorage.getItem('policy_recurrence');
+            const policyDepartment = localStorage.getItem('policy_department');
+            const policyEntities = localStorage.getItem('policy_entities');
+            
+            // Create a new row for the table.
+            const newRow = document.createElement('tr');
+            
+            // Create a new cell for each column in the table.
+            const policyAssigneeCell = document.createElement('td');
+            policyAssigneeCell.textContent = policyAssignee;
+            
+            const policyEntitiesCell = document.createElement('td');
+            policyEntitiesCell.textContent = policyEntities;
+            
+            const policyRecurrenceCell = document.createElement('td');
+            policyRecurrenceCell.textContent = policyRecurrence;
+            
+            const policyDepartmentCell = document.createElement('td');
+            policyDepartmentCell.textContent = policyDepartment;
+            
+            // Create a blank cell for the Organization Width column.
+            const organizationWidthCell = document.createElement('td');
+            organizationWidthCell.textContent = '';
+            
+            // Create a blank cell for the Approver column.
+            const approverCell = document.createElement('td');
+            approverCell.textContent = '';
+            
+            // Append the new cells to the new row.
+            newRow.appendChild(policyAssigneeCell);
+            newRow.appendChild(policyEntitiesCell);
+            newRow.appendChild(policyRecurrenceCell);
+            newRow.appendChild(policyDepartmentCell);
+            newRow.appendChild(organizationWidthCell);
+            newRow.appendChild(approverCell);
+            
+            // Append the new row to the table.
+            document.querySelector('#policy-table').appendChild(newRow);
+            const cardHeader = document.querySelector('.card-header');
+            
+            // Set the card header text to the policy name.
+            cardHeader.textContent = policyName;
+            
+            </script>
+
+
+
+
+                                        
+   
+     
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/datatables/datatables.min.js"></script>
+    <script src="assets/js/initiate-datatables.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="/bootstrap-simple-admin-template/js/forms.js"></script>
+    <script src="/bootstrap-simple-admin-template/js/policy-requritement.js"
+</body>
+
+</html>
